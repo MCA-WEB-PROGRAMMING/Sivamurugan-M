@@ -13,13 +13,13 @@
                 <table style="border: 2px solid black; padding: 15px">
                     <tr>
                         <td>
-                            Enter the meter number:
+                            Enter your meter number:
                             <input type="number" name="meter">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Enter the no.of.units:
+                            Enter no.of.units consumed:
                             <input type="number" name="unit">
                         </td>
                     </tr>
@@ -55,157 +55,121 @@ if(isset($_POST["fn"]))
     {
         if($n2>0&&$n2<=50)
         {
-            $ap=5;
-            $pay=(($n2*.25)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=5;
+            $pay=(($n2*.25)+$ec);
         }
         elseif($n2>50&&$n2<=100)
         {
-            $ap=5;
-            $pay=(($n2*.50)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=5;
+            $pay=(($n2*.50)+$ec);
         }
         elseif($n2>100&&$n2<=150)
         {
-            $ap=5;
-            $pay=(($n2*.75)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=5;
+            $pay=(($n2*.75)+$ec);
         }
         elseif($n2>150&&$n2<=200)
         {
-            $ap=5;
-            $pay=(($n2*1)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=5;
+            $pay=(($n2*1)+$ec);
         }
         elseif($n2>200&&$n2<=300)
         {
-            $ap=5;
-            $pay=(($n2*2)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=5;
+            $pay=(($n2*2)+$ec);
         }
         elseif($n2>300&&$n2<=500)
         {
-            $ap=5;
-            $pay=(($n2*3)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=5;
+            $pay=(($n2*3)+$ec);
         }
-        echo "Your meter number is: ".$n1;
+        echo "Your meter number: ".$n1;
         echo "<br>";
-        echo "Your unit is: ".$n2;
+        echo "No.of.unit consumed: ".$n2;
         echo "<br>";
-        echo "Your additional pay is: ".$ap;
+        echo "Extra charge: ".$ec;
         echo "<br>";
-        echo "Your pay is: ".$pay;
+        echo "Your total pay: ".$pay;
     }
     if($n3=="Residential")
     {
         if($n2>0&&$n2<=50)
         {
-            $ap=20;
-            $pay=(($n2*.50)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=15;
+            $pay=(($n2*.50)+$ec);
         }
         elseif($n2>50&&$n2<=100)
         {
-            $ap=20;
-            $pay=(($n2*1)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=15;
+            $pay=(($n2*1)+$ec);
         }
         elseif($n2>100&&$n2<=150)
         {
-            $ap=20;
-            $pay=(($n2*1.75)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=15;
+            $pay=(($n2*1.75)+$ec);
         }
         elseif($n2>150&&$n2<=200)
         {
-            $ap=20;
-            $pay=(($n2*2.50)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=15;
+            $pay=(($n2*2.50)+$ec);
         }
         elseif($n2>200&&$n2<=300)
         {
-            $ap=20;
-            $pay=(($n2*3)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=15;
+            $pay=(($n2*3)+$ec);
         }
         elseif($n2>300&&$n2<=500)
         {
-            $ap=20;
-            $pay=(($n2*5)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=15;
+            $pay=(($n2*5)+$ec);
         }
-        echo "Your meter number is: ".$n1;
+        echo "Your meter number: ".$n1;
         echo "<br>";
-        echo "Your unit is: ".$n2;
+        echo "No.of.unit consumed: ".$n2;
         echo "<br>";
-        echo "Your additional pay is: ".$ap;
+        echo "Extra charge: ".$ec;
         echo "<br>";
-        echo "Your pay is: ".$pay;
+        echo "Your total pay: ".$pay;
     }
     if($n3=="Commercial")
     {
         if($n2>0&&$n2<=50)
         {
-            $ap=30;
-            $pay=(($n2*1)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=30;
+            $pay=(($n2*1)+$ec);
         }
         elseif($n2>50&&$n2<=100)
         {
-            $ap=30;
-            $pay=(($n2*2)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=30;
+            $pay=(($n2*2)+$ec);
         }
         elseif($n2>100&&$n2<=150)
         {
-            $ap=30;
-            $pay=(($n2*3)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=30;
+            $pay=(($n2*3)+$ec);
         }
         elseif($n2>150&&$n2<=200)
         {
-            $ap=30;
-            $pay=(($n2*4)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=30;
+            $pay=(($n2*4)+$ec);
         }
         elseif($n2>200&&$n2<=300)
         {
-            $ap=30;
-            $pay=(($n2*5)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=30;
+            $pay=(($n2*5)+$ec);
         }
         elseif($n2>300&&$n2<=500)
         {
-            $ap=30;
-            $pay=(($n2*7)+$ap);
-            echo "$pay";
-            echo "<br>";
+            $ec=30;
+            $pay=(($n2*7)+$ec);
         }
-        echo "Your meter number is: ".$n1;
+        echo "Your meter number: ".$n1;
         echo "<br>";
-        echo "Your unit is: ".$n2;
+        echo "No.of.unit consumed: ".$n2;
         echo "<br>";
-        echo "Your additional pay is: ".$ap;
+        echo "Extra charge: ".$ec;
         echo "<br>";
-        echo "Your pay is: ".$pay;
+        echo "Your total pay: ".$pay;
     }
 }
 ?>
