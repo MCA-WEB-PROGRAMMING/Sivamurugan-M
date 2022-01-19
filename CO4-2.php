@@ -208,3 +208,4 @@ if(isset($_POST["fn"]))
         echo "Your pay is: ".$pay;
     }
 }
+?>
